@@ -11,9 +11,10 @@
 <body>
     <div id="app">
         <ul>
-            <li v-bind:class="[item.done == 'true' ? 'active' : '']" v-for="item in todos" >
+            <li v-bind:class="[item.done == 'true' ? 'active' : '']" v-for="(item,index) in todos" >
                 {{ item.text}}
                 {{item.done}}
+                <button v-on:click= "remove(index)">X</button>
             </li>
         </ul>
     </div>
