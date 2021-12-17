@@ -58,6 +58,6 @@ var app = new Vue({
        console.log(this.todo)
         
     }
-  }
+}
  
 })

@@ -13,7 +13,7 @@
         <input v-model="todo" placeholder="edit me">
         <button @click ="addObj">Add</button>
         <ul>
-            <li v-bind:class="[item.done == 'true' ? 'active' : '']" v-for="(item,index) in todos" >
+            <li v-bind:class="[item.done == 'true' ? 'active' : '']" v-for="(item,index) in todos" @click="[item.done == 'true' ? item.done = 'false' : item.done = 'true'] " >
                 {{ item.text}}
                 {{item.done}}
                 <button v-on:click= "remove(index)">X</button>
