@@ -17,27 +17,25 @@ var app = new Vue({
 
         {
             text: 'lorem ipsum gggg',
-            done: true
+            done: 'true'
         },
         {
             text: 'lorem ipsum papapa',
-            done: true
+            done: 'true'
         },
         {
             text: 'lorem ipsum dododo',
-            done: true
+            done: 'true'
         },
         {
             text: 'lorem ipsum eeeee',
-            done: false
+            done: 'false'
         },
         {
             text: 'lorem ipsum aaaa',
-            done: false
+            done: 'false'
         }
     ]
   }
  
-    
-
 })

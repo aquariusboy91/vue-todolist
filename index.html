@@ -11,9 +11,10 @@
 <body>
     <div id="app">
         <ul>
-            <li v-bind:class="[{ active: isActive }, errorClass]" v-for="item in todos" >
+            <li v-bind:class="[item.done == 'true' ? 'active' : '']" v-for="item in todos" >
                 {{ item.text}}
                 {{item.done}}
+            </li>
         </ul>
     </div>
    <script src="js/script.js"></script> 
