@@ -24,6 +24,7 @@ var app = new Vue({
   el: '#app',
   data: {
       todo: '',
+        image: { backgroundImage: "url(todolist.jpg)"},
     todos: [
 
         {

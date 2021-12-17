@@ -9,13 +9,18 @@
     <title>Todolist</title>
 </head>
 <body>
-    <div id="app">
-        <input v-model="todo" placeholder="edit me">
-        <button @click ="addObj">Add</button>
+    <div id="app" class="container">
+        <div class = "form">
+            <div class ="header-form" :style="image">
+                <h1>Todolist</h1>
+            </div>
+            <input v-model="todo" placeholder="Nuovo elemento" class="input">
+            <div @click ="addObj" class="btn-add">+</div>
+        </div>
         <ul>
-            <li v-bind:class="[item.done == 'true' ? 'active' : '']" v-for="(item,index) in todos" @click="[item.done == 'true' ? item.done = 'false' : item.done = 'true'] " >
+            <li v-bind:class="[item.done == 'true' ? 'active' : '']" v-for="(item,index) in todos" @click="[item.done == 'true' ? item.done = 'false' : item.done = 'true'] " class ="li-style">
                 {{item.text}}
-                <button v-on:click= "remove(index)">X</button>
+                <button class= "btn-remove" v-on:click= "remove(index)">X</button>
             </li>
         </ul>
     </div>
