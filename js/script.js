@@ -27,23 +27,23 @@ var app = new Vue({
     todos: [
 
         {
-            text: 'lorem ipsum gggg',
+            text: 'Zucchero',
             done: 'true'
         },
         {
-            text: 'lorem ipsum papapa',
+            text: 'Uova',
             done: 'true'
         },
         {
-            text: 'lorem ipsum dododo',
+            text: 'Pasta',
             done: 'true'
         },
         {
-            text: 'lorem ipsum eeeee',
+            text: 'Pollo',
             done: 'false'
         },
         {
-            text: 'lorem ipsum aaaa',
+            text: 'Pizza',
             done: 'false'
         }
     ]
