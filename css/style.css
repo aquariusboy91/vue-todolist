@@ -60,7 +60,7 @@ h1 {
     height: 80px;
     background-size: 100%;
     background-repeat: no-repeat;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
     display: flex;
     align-items: flex-end;
     color: #06023a;
